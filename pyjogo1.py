@@ -29,12 +29,6 @@ def main():
     ret13 = pygame.Rect(170, 480, 20, 60)
     ret14 = pygame.Rect(320, 250, 20, 360)
     ret15 = pygame.Rect(320, 240, 310, 20)
-    ret16 = pygame.Rect(540, 400, 140, 20)
-    ret17 = pygame.Rect(540, 300, 20, 100)
-    ret18 = pygame.Rect(610, 240, 20, 120)
-    ret19 = pygame.Rect(400, 300, 150, 20)
-    ret20 = pygame.Rect(400, 300, 20, 200)
-    ret21 = pygame.Rect(470, 370, 20, 170)
     suport1 = pygame.Rect(0, 0, 45, 5)
     suport2 = pygame.Rect(0, 40, 45, 5)
     square = pygame.Rect(20, 140, 30, 30)
@@ -72,11 +66,7 @@ def main():
         ret.left -= int(ret.width / 2)
         ret.top -= int(ret.height / 2)
 
-        if ret.colliderect(ret2) or ret.colliderect(ret4) or ret.colliderect(ret5) or ret.colliderect(bar1) or ret.colliderect(bar2)\
-                or ret.colliderect(square) or ret.colliderect(ret6) or ret.colliderect(ret7) or ret.colliderect(ret8)\
-                or ret.colliderect(ret9) or ret.colliderect(ret10) or ret.colliderect(ret11) or ret.colliderect(ret12) or ret.colliderect(ret13)\
-                or ret.colliderect(ret14) or ret.colliderect(ret15) or ret.colliderect(ret16) or ret.colliderect(ret17) or ret.colliderect(ret18)\
-                or ret.colliderect(ret19) or ret.colliderect(ret20) or ret.colliderect(ret21):
+        if ret.colliderect(ret2) or ret.colliderect(ret4) or ret.colliderect(ret5) or ret.colliderect(bar1) or ret.colliderect(bar2) or ret.colliderect(square):
             score = 0
             explosao.play()
             pygame.mouse.set_pos(15, 23)
@@ -109,12 +99,6 @@ def main():
         pygame.draw.rect(screen, alet2, ret13)
         pygame.draw.rect(screen, alet2, ret14)
         pygame.draw.rect(screen, alet2, ret15)
-        pygame.draw.rect(screen, alet2, ret16)
-        pygame.draw.rect(screen, alet2, ret17)
-        pygame.draw.rect(screen, alet2, ret18)
-        pygame.draw.rect(screen, alet2, ret19)
-        pygame.draw.rect(screen, alet2, ret20)
-        pygame.draw.rect(screen, alet2, ret21)
         pygame.draw.rect(screen, alet2, square)
         pygame.draw.rect(screen, alet2, bar1)
         pygame.draw.rect(screen, alet2, bar2)
